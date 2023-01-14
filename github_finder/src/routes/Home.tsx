@@ -27,7 +27,7 @@ const Home = () => {
     return( 
     <div>
         <Search loadUser={loadUser} />
-        {user && <p>{user.login}</p>
+        {user && <p>{user.login}</p>}
     </div>
     );
 };
