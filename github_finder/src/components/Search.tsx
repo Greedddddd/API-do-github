@@ -24,9 +24,9 @@ const Search = ({loadUser}: SearchProps) => {
             <div className={classes.search_container}>
               <input type="text" 
               placeholder="Digite o nome do usuário" 
-              onChange={(e) => setUserName(e.target.value)
+              onChange={(e) => setUserName(e.target.value)}
               onKeyDown={handleKeyDown}
-              }/>
+              />
                <button onClick={() => loadUser(userName)}>
                     <BsSearch />
                 </button>
