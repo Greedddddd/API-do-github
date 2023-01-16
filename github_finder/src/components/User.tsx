@@ -1,6 +1,6 @@
 import { UserProps } from "../types/user"
 
-import {MdlocationPin} from 'react-icons/md'
+import {MdLocationPin} from 'react-icons/md'
 
 import {Link} from 'react-router-dom'
 
@@ -16,7 +16,7 @@ const User = ({
             <img src={avatar_url} alt={login} />
             <h2>{login}</h2>
             <p>
-                <MdlocationPin/>
+                <MdLocationPin/>
                 <span>{location}</span>
             </p>
             <div>
