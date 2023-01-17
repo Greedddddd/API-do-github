@@ -1,8 +1,10 @@
-import { UserProps } from "../types/user"
+import { UserProps } from "../types/user";
 
-import {MdLocationPin} from 'react-icons/md'
+import {MdLocationPin} from 'react-icons/md';
 
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+
+import classes from "./User.module.css";
 
 const User = ({
     login, 
@@ -12,8 +14,8 @@ const User = ({
     location
 }: UserProps) =>{
     return (
-        <div>
-            <img src={avatar_url} alt={login} />
+        <div className={classes.user}> 
+           <img src={avatar_url} alt={login} />
             <h2>{login}</h2>
             {location && (
             <p>
